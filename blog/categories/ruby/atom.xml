@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | Ruby Workshop]]></title>
   <link href="http://ruby-workshop.github.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://ruby-workshop.github.com/"/>
-  <updated>2012-02-20T17:36:20+01:00</updated>
+  <updated>2012-02-20T19:17:17+01:00</updated>
   <id>http://ruby-workshop.github.com/</id>
   <author>
     <name><![CDATA[Hrvoje Šimić]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[uvod u ruby]]></title>
-    <link href="http://ruby-workshop.github.com/blog/2012/02/20/uvod-u-ruby_reversed_reversed/"/>
-    <updated>2012-02-20T11:48:00+01:00</updated>
-    <id>http://ruby-workshop.github.com/blog/2012/02/20/uvod-u-ruby_reversed_reversed</id>
+    <link href="http://ruby-workshop.github.com/blog/2012/02/20/uvod-u-ruby/"/>
+    <updated>2012-02-20T14:00:00+01:00</updated>
+    <id>http://ruby-workshop.github.com/blog/2012/02/20/uvod-u-ruby</id>
     <content type="html"><![CDATA[<p><blockquote><p>For me the purpose of life is partly to have joy. Programmers often feel joy when they can concentrate on the creative side of programming, so Ruby is designed to make programmers happy.</p><footer><strong>Yukihiro Matsumoto</strong> <cite>The Inventor of Ruby</cite></footer></blockquote></p>
 
 <p>Kako tebe Ruby može učiniti sretnim?</p>
@@ -104,11 +104,59 @@ Ruby je jedan od "najobjektnijih" jezika na svijetu.</p>
   
   <entry>
     <title type="html"><![CDATA[zahtjevi za rad]]></title>
-    <link href="http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad_reversed_reversed/"/>
-    <updated>2012-02-20T02:29:00+01:00</updated>
-    <id>http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad_reversed_reversed</id>
+    <link href="http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad/"/>
+    <updated>2012-02-20T13:59:00+01:00</updated>
+    <id>http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad</id>
     <content type="html"><![CDATA[<p>Za ovu radionicu trebat će vam <a href="http://www.github.com">github account</a>
 i lokalno instalirana verzija rubya.</p>
+
+<p><strong>Zašto github (osim što je najbolji)?</strong></p>
+
+<p>Zadatke planiram objavljivati u
+<a href="https://gist.github.com/">gistovima</a>, najlakšem načinu djeljenja koda.
+Nakon objave zadatka zadatak ćete moći rješiti "forkanjem".</p>
+
+<h2>Instalacija</h2>
+
+<p><strong>Windows</strong></p>
+
+<p>Instalirajte <a href="http://msysgit.googlecode.com/files/Git-1.7.9-preview20120201.exe">Git for Windows</a> i <a href="http://rubyforge.org/frs/download.php/75127/rubyinstaller-1.9.2-p290.exe">Ruby</a>.</p>
+
+<p>Odite na <em>Start > Run > cmd</em> i upišite <code>ruby -v</code>. Ukoliko vam ta komanda
+vraća
+<code>
+ruby 1.9.2 (x) [y]
+</code>
+uspješno ste instalirali ruby :)</p>
+
+<p><strong>Linux/Mac</strong></p>
+
+<p>Instalirajte git: <code>$ sudo apt-get install git</code></p>
+
+<p>Instalirajte RVM (Ruby Version Manager):
+<code>bash
+$ bash -s stable &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+$ source ~/.bash_profile
+</code>
+Nakon toga instalirajte "requirementse" za ruby. Ispišite listu
+"requirementsa":
+<code>
+$ rvm requirements
+</code>
+Istalirajte ruby
+<code>
+$ rvm install 1.9.2
+</code>
+Ukoliko vam <code>$ ruby -v</code> vraća
+<code>bash
+ruby 1.9.2 (x) [y]
+</code>
+uspješno ste instalirali ruby :)</p>
+
+<h2>Problemi sa instalacijom</h2>
+
+<p><em>"Ne mogu instalirati Ruby! Ne dobijem takav izlaz kad upišem ruby -v."</em>
+- <a href="mailto:shime.ferovac@gmail.com?subject=[ruby-workshop]%20Ne%20mogu%20instalirati%20Ruby!">mail me, baby!</a></p>
 ]]></content>
   </entry>
   

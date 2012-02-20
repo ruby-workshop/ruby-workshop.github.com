@@ -4,7 +4,7 @@
   <title><![CDATA[Ruby Workshop]]></title>
   <link href="http://ruby-workshop.github.com/atom.xml" rel="self"/>
   <link href="http://ruby-workshop.github.com/"/>
-  <updated>2012-02-20T17:36:20+01:00</updated>
+  <updated>2012-02-20T19:17:17+01:00</updated>
   <id>http://ruby-workshop.github.com/</id>
   <author>
     <name><![CDATA[Hrvoje Šimić]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[uvod u ruby]]></title>
-    <link href="http://ruby-workshop.github.com/blog/2012/02/20/uvod-u-ruby_reversed_reversed/"/>
-    <updated>2012-02-20T11:48:00+01:00</updated>
-    <id>http://ruby-workshop.github.com/blog/2012/02/20/uvod-u-ruby_reversed_reversed</id>
+    <link href="http://ruby-workshop.github.com/blog/2012/02/20/uvod-u-ruby/"/>
+    <updated>2012-02-20T14:00:00+01:00</updated>
+    <id>http://ruby-workshop.github.com/blog/2012/02/20/uvod-u-ruby</id>
     <content type="html"><![CDATA[<blockquote><p>For me the purpose of life is partly to have joy. Programmers often feel joy when they can concentrate on the creative side of programming, so Ruby is designed to make programmers happy.</p><footer><strong>Yukihiro Matsumoto</strong> <cite>The Inventor of Ruby</cite></footer></blockquote>
 
 
@@ -126,11 +126,74 @@ prioritet.</p>
   
   <entry>
     <title type="html"><![CDATA[zahtjevi za rad]]></title>
-    <link href="http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad_reversed_reversed/"/>
-    <updated>2012-02-20T02:29:00+01:00</updated>
-    <id>http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad_reversed_reversed</id>
+    <link href="http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad/"/>
+    <updated>2012-02-20T13:59:00+01:00</updated>
+    <id>http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad</id>
     <content type="html"><![CDATA[<p>Za ovu radionicu trebat će vam <a href="http://www.github.com">github account</a>
 i lokalno instalirana verzija rubya.</p>
+
+<p><strong>Zašto github (osim što je najbolji)?</strong></p>
+
+<p>Zadatke planiram objavljivati u
+<a href="https://gist.github.com/">gistovima</a>, najlakšem načinu djeljenja koda.
+Nakon objave zadatka zadatak ćete moći rješiti &#8220;forkanjem&#8221;.</p>
+
+<h2>Instalacija</h2>
+
+<p><strong>Windows</strong></p>
+
+<p>Instalirajte <a href="http://msysgit.googlecode.com/files/Git-1.7.9-preview20120201.exe">Git for Windows</a> i <a href="http://rubyforge.org/frs/download.php/75127/rubyinstaller-1.9.2-p290.exe">Ruby</a>.</p>
+
+<p>Odite na <em>Start > Run > cmd</em> i upišite <code>ruby -v</code>. Ukoliko vam ta komanda
+vraća</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ruby 1.9.2 (x) [y]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>uspješno ste instalirali ruby :)</p>
+
+<p><strong>Linux/Mac</strong></p>
+
+<p>Instalirajte git: <code>$ sudo apt-get install git</code></p>
+
+<p>Instalirajte RVM (Ruby Version Manager):</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>bash -s stable &lt; &lt;<span class="o">(</span>curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer<span class="o">)</span>
+</span><span class='line'><span class="nv">$ </span><span class="nb">source</span> ~/.bash_profile
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Nakon toga instalirajte &#8220;requirementse&#8221; za ruby. Ispišite listu
+&#8220;requirementsa&#8221;:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rvm requirements
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Istalirajte ruby</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rvm install 1.9.2
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Ukoliko vam <code>$ ruby -v</code> vraća</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ruby 1.9.2 <span class="o">(</span>x<span class="o">)</span> <span class="o">[</span>y<span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>uspješno ste instalirali ruby :)</p>
+
+<h2>Problemi sa instalacijom</h2>
+
+<p><em>&#8220;Ne mogu instalirati Ruby! Ne dobijem takav izlaz kad upišem ruby -v.&#8221;</em>
+- <a href="mailto:shime.ferovac@gmail.com?subject=[ruby-workshop]%20Ne%20mogu%20instalirati%20Ruby!">mail me, baby!</a></p>
 ]]></content>
   </entry>
   

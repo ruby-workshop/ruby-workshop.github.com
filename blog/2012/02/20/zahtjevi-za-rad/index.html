@@ -10,8 +10,7 @@
 
   
   <meta name="description" content="Za ovu radionicu trebat će vam github account
-i lokalno instalirana verzija rubya.
-">
+i lokalno instalirana verzija rubya. Zašto github (osim što je najbolji)? Zadatke planiram objavljivati &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +19,7 @@ i lokalno instalirana verzija rubya.
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad_reversed_reversed">
+  <link rel="canonical" href="http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -83,7 +82,7 @@ i lokalno instalirana verzija rubya.
   
 
 
-<time datetime="2012-02-20T02:29:00+01:00" pubdate data-updated="true">Feb 20<span>th</span>, 2012</time>
+<time datetime="2012-02-20T13:59:00+01:00" pubdate data-updated="true">Feb 20<span>th</span>, 2012</time>
         
       </p>
     
@@ -92,6 +91,69 @@ i lokalno instalirana verzija rubya.
 
 <div class="entry-content"><p>Za ovu radionicu trebat će vam <a href="http://www.github.com">github account</a>
 i lokalno instalirana verzija rubya.</p>
+
+<p><strong>Zašto github (osim što je najbolji)?</strong></p>
+
+<p>Zadatke planiram objavljivati u
+<a href="https://gist.github.com/">gistovima</a>, najlakšem načinu djeljenja koda.
+Nakon objave zadatka zadatak ćete moći rješiti &#8220;forkanjem&#8221;.</p>
+
+<h2>Instalacija</h2>
+
+<p><strong>Windows</strong></p>
+
+<p>Instalirajte <a href="http://msysgit.googlecode.com/files/Git-1.7.9-preview20120201.exe">Git for Windows</a> i <a href="http://rubyforge.org/frs/download.php/75127/rubyinstaller-1.9.2-p290.exe">Ruby</a>.</p>
+
+<p>Odite na <em>Start > Run > cmd</em> i upišite <code>ruby -v</code>. Ukoliko vam ta komanda
+vraća</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ruby 1.9.2 (x) [y]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>uspješno ste instalirali ruby :)</p>
+
+<p><strong>Linux/Mac</strong></p>
+
+<p>Instalirajte git: <code>$ sudo apt-get install git</code></p>
+
+<p>Instalirajte RVM (Ruby Version Manager):</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>bash -s stable &lt; &lt;<span class="o">(</span>curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer<span class="o">)</span>
+</span><span class='line'><span class="nv">$ </span><span class="nb">source</span> ~/.bash_profile
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Nakon toga instalirajte &#8220;requirementse&#8221; za ruby. Ispišite listu
+&#8220;requirementsa&#8221;:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rvm requirements
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Istalirajte ruby</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nv">$ </span>rvm install 1.9.2
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Ukoliko vam <code>$ ruby -v</code> vraća</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ruby 1.9.2 <span class="o">(</span>x<span class="o">)</span> <span class="o">[</span>y<span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>uspješno ste instalirali ruby :)</p>
+
+<h2>Problemi sa instalacijom</h2>
+
+<p><em>&#8220;Ne mogu instalirati Ruby! Ne dobijem takav izlaz kad upišem ruby -v.&#8221;</em>
+- <a href="mailto:shime.ferovac@gmail.com?subject=[ruby-workshop]%20Ne%20mogu%20instalirati%20Ruby!">mail me, baby!</a></p>
 </div>
 
 
@@ -102,19 +164,6 @@ i lokalno instalirana verzija rubya.</p>
 
 <span class="byline author vcard">Posted by <span class="fn">Hrvoje Šimić</span></span>
 
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-02-20T02:29:00+01:00" pubdate data-updated="true">Feb 20<span>th</span>, 2012</time>
       
 
 <span class="categories">
@@ -128,7 +177,7 @@ i lokalno instalirana verzija rubya.</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad_reversed_reversed/" data-via="ruby-workshop" data-counturl="http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad_reversed_reversed/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad/" data-via="ruby-workshop" data-counturl="http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="small"></div>
@@ -140,7 +189,7 @@ i lokalno instalirana verzija rubya.</p>
     <p class="meta">
       
       
-        <a class="basic-alignment right" href="/blog/2012/02/20/uvod-u-ruby_reversed_reversed/" title="next Post: uvod u ruby">uvod u ruby &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2012/02/20/uvod-u-ruby/" title="next Post: uvod u ruby">uvod u ruby &raquo;</a>
       
     </p>
   </footer>
@@ -161,11 +210,11 @@ i lokalno instalirana verzija rubya.</p>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2012/02/20/uvod-u-ruby_reversed_reversed/">uvod u ruby</a>
+        <a href="/blog/2012/02/20/uvod-u-ruby/">uvod u ruby</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2012/02/20/zahtjevi-za-rad_reversed_reversed/">zahtjevi za rad</a>
+        <a href="/blog/2012/02/20/zahtjevi-za-rad/">zahtjevi za rad</a>
       </li>
     
   </ul>
@@ -220,8 +269,8 @@ i lokalno instalirana verzija rubya.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad_reversed_reversed/';
-        var disqus_url = 'http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad_reversed_reversed/';
+        var disqus_identifier = 'http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad/';
+        var disqus_url = 'http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad/';
         var disqus_script = 'embed.js';
       
     (function () {
