@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ruby | Ruby Workshop]]></title>
+  <link href="http://ruby-workshop.github.com/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://ruby-workshop.github.com/"/>
+  <updated>2012-02-20T17:30:19+01:00</updated>
+  <id>http://ruby-workshop.github.com/</id>
+  <author>
+    <name><![CDATA[Hrvoje Šimić]]></name>
+    <email><![CDATA[ruby.workshop.zg@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[uvod u ruby]]></title>
+    <link href="http://ruby-workshop.github.com/blog/2012/02/20/uvod-u-ruby_reversed_reversed/"/>
+    <updated>2012-02-20T11:48:00+01:00</updated>
+    <id>http://ruby-workshop.github.com/blog/2012/02/20/uvod-u-ruby_reversed_reversed</id>
+    <content type="html"><![CDATA[<p><blockquote><p>For me the purpose of life is partly to have joy. Programmers often feel joy when they can concentrate on the creative side of programming, so Ruby is designed to make programmers happy.</p><footer><strong>Yukihiro Matsumoto</strong> <cite>The Inventor of Ruby</cite></footer></blockquote></p>
+
+<p>Kako tebe Ruby može učiniti sretnim?</p>
+
+<p>Hello world u Javi:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>HelloWorldApp.java </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span><span class="kd">class</span> <span class="nc">HelloWorldApp</span> <span class="o">{&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="n">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Hello world!&quot;</span><span class="o">);</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Pokretanje:</p>
+
+<p><code>bash
+javac HelloWorldApp.java
+java HelloWorldApp
+</code></p>
+
+<p>Hello world u Rubyu:
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>hello_world.rb </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='rb'><span class='line'><span class="nb">print</span> <span class="s2">&quot;Hello world!&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+Pokretanje:
+<code>bash
+ruby hello_world.rb
+</code>
+Kako bi na engleskom rekli računalu što želite napraviti?</p>
+
+<p>Ruby je moćan jezik sa predivnom sintaksom. Ruby se želi što više
+prilagoditi programeru i govornom jeziku, te mu brzina izvršavanja nije
+prioritet.</p>
+
+<p>Filozofija Rubya:
+<blockquote><p>Everything is an object.</p></blockquote></p>
+
+<p>Primjeri</p>
+
+<p><code>ruby
+2.class #=&gt; Fixnum
+2.class.superclass #=&gt; Integer
+2.class.superclass.superclass #=&gt; Numeric
+2.class.superclass.superclass.superclass #=&gt; Object
+2.class.superclass.superclass.superclass.superclass #=&gt; BasicObject
+2.class.superclass.superclass.superclass.superclass.superclass #=&gt; nil
+</code>
+Čak je i "ništa" objekt:
+<code>ruby
+nil.class #=&gt; NilClass
+</code>
+<code>ruby
+Class.class #=&gt; Class
+Class.class.superclass #=&gt; Module
+Class.class.superclass.superclass #=&gt; Object
+</code>
+```ruby
+Object.class #=> Class
+Object.class.superclass #=> Module
+Object.class.superclass.superclass #=> Object</p>
+
+<p>mind = "blown"
+```
+Ruby je jedan od "najobjektnijih" jezika na svijetu.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[zahtjevi za rad]]></title>
+    <link href="http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad_reversed_reversed/"/>
+    <updated>2012-02-20T02:29:00+01:00</updated>
+    <id>http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad_reversed_reversed</id>
+    <content type="html"><![CDATA[<p>Za ovu radionicu trebat će vam <a href="http://www.github.com">github account</a>
+i lokalno instalirana verzija rubya.</p>
+]]></content>
+  </entry>
+  
+</feed>

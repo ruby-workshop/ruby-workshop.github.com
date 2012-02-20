@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>
+            http://ruby-workshop.github.com/blog/2012/02/20/zahtjevi-za-rad_reversed_reversed/
+        </loc>
+        <lastmod>2012-02-20T17:23:44+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ruby-workshop.github.com/blog/2012/02/20/uvod-u-ruby_reversed_reversed/</loc>
+        <lastmod>2012-02-20T17:22:52+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ruby-workshop.github.com/blog/archives/</loc>
+        <lastmod>2012-02-20T17:23:44+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ruby-workshop.github.com/</loc>
+        <lastmod>2012-02-20T17:23:44+01:00</lastmod>
+    </url>
+</urlset>
