@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | Ruby Workshop]]></title>
   <link href="http://ruby-workshop.github.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://ruby-workshop.github.com/"/>
-  <updated>2012-02-20T19:26:36+01:00</updated>
+  <updated>2012-02-20T22:35:06+01:00</updated>
   <id>http://ruby-workshop.github.com/</id>
   <author>
     <name><![CDATA[Hrvoje Šimić]]></name>
@@ -113,7 +113,7 @@ i lokalno instalirana verzija rubya.</p>
 <p><strong>Zašto github (osim što je najbolji)?</strong></p>
 
 <p>Zadatke planiram objavljivati u
-<a href="https://gist.github.com/">gistovima</a>, najlakšem načinu djeljenja koda.
+<a href="https://gist.github.com/">gistovima</a>, najlakšem načinu dijeljenja koda.
 Nakon objave zadatak ćete moći rješiti "forkanjem".</p>
 
 <h2>Instalacija</h2>
