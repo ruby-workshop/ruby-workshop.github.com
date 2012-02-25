@@ -301,6 +301,971 @@ vraća</p>
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/02/20/osnovni-tipovi-podataka/">osnovni tipovi podataka</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-20T13:58:00+01:00" pubdate data-updated="true">Feb 20<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Brojevi</h2>
+
+<p>Počinjemo sa najjednostavnijim tipom podatka - brojem.</p>
+
+<p>Otvorite text editor i upišite</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">puts</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">4</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Spremite datoteku kao <code>rezultat.rb</code> i nakon toga pokrenite pozivom <code>ruby
+calc.rb</code> iz komandne linije.</p>
+
+<p>Trebali biste vidjeti <code>5</code> kao rezultat.</p>
+
+<p><code>puts</code> - ispisivanje na ekran</p>
+
+<p>Ruby razlikuje dva tipa brojeva - <em>Floatove</em> i <em>Integere</em>.</p>
+
+<ul>
+<li>Float - decimalni brojevi</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="mi">1</span><span class="o">.</span><span class="mi">231</span>
+</span><span class='line'><span class="mi">0</span><span class="o">.</span><span class="mi">0</span>
+</span><span class='line'><span class="mi">3</span><span class="o">.</span><span class="mi">14</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Integer - cjelobrojni brojevi</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="mi">2314</span>
+</span><span class='line'><span class="mi">1</span>
+</span><span class='line'><span class="mi">9999999999999</span>
+</span><span class='line'><span class="o">-</span><span class="mi">205</span>
+</span><span class='line'><span class="mi">0</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Brojevi znaju izvoditi dosta korisnih stvari. Definirana stvar koju
+broj zna izvoditi zove se <strong>metoda</strong>.</p>
+
+<p>Primjeri metoda</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1">### abs - vraća apsolutnu vrijednost broja</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">-</span><span class="mi">2</span><span class="o">.</span><span class="n">abs</span> <span class="c1">#=&gt; 2</span>
+</span><span class='line'><span class="mi">4</span><span class="o">.</span><span class="n">abs</span> <span class="c1">#=&gt; 4</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">### zero? - provjerava je li broj jednak 0</span>
+</span><span class='line'>
+</span><span class='line'><span class="mi">0</span><span class="o">.</span><span class="n">zero?</span> <span class="c1">#=&gt; true</span>
+</span><span class='line'><span class="mi">1</span><span class="o">.</span><span class="n">zero?</span> <span class="c1">#=&gt; false</span>
+</span><span class='line'><span class="mi">0</span><span class="o">.</span><span class="mi">0</span><span class="o">.</span><span class="n">zero?</span> <span class="c1">#=&gt; true</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">### eql? - provjerava je li broj jednak drugom broju</span>
+</span><span class='line'>
+</span><span class='line'><span class="mi">5</span><span class="o">.</span><span class="n">eql?</span> <span class="mi">5</span> <span class="c1">#=&gt; true</span>
+</span><span class='line'><span class="mi">6</span><span class="o">.</span><span class="n">eql?</span> <span class="mi">4</span> <span class="c1">#=&gt; false</span>
+</span><span class='line'><span class="mi">0</span><span class="o">.</span><span class="n">eql?</span> <span class="mi">0</span><span class="o">.</span><span class="mi">0</span> <span class="c1">#=&gt; false (zato jer nisu isti tip)</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">### round(n) - zaokružuje broj na maksimalno n decimalnih mjesta</span>
+</span><span class='line'><span class="c1">### n   argument koji šaljemo metodi, nije obavezan. ako ne pošaljemo </span>
+</span><span class='line'><span class="c1">###     argument podrazumijeva se 0</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">-</span><span class="mi">2</span><span class="o">.</span><span class="n">round</span> <span class="o">=&gt;</span> <span class="o">-</span><span class="mi">2</span>
+</span><span class='line'><span class="mi">3</span><span class="o">.</span><span class="mi">14</span><span class="o">.</span><span class="n">round</span> <span class="o">=&gt;</span> <span class="mi">3</span>
+</span><span class='line'><span class="mi">3</span><span class="o">.</span><span class="mi">14159</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="mi">3</span><span class="o">.</span><span class="mi">14</span>
+</span><span class='line'><span class="mi">3</span><span class="o">.</span><span class="mo">021</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="mi">3</span><span class="o">.</span><span class="mo">021</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Kako prepoznati metodu?</em></p>
+
+<p>Metoda koju pozivate uvijek se nalazi sa desne strane točke, a objekt
+kojem govorite da napravi tu metodu sa lijeve. &#8211; <strong>objekt.metoda</strong></p>
+
+<p><em>Kako prepoznati argument?</em></p>
+
+<p>Argument je ono što šaljemo sa pozivom metode. Primjer:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="mi">5</span><span class="o">.</span><span class="n">eql?</span> <span class="mi">0</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><strong>5</strong> - objekt</li>
+<li><strong>eql?</strong> - metoda</li>
+<li><strong>0</strong> - argument</li>
+</ul>
+
+
+<p><em>Zašto negdje koristimo zagrade kad šaljemo argument, a negdje ne?</em></p>
+
+<p>U Rubyu zagrade kod slanja arugmenta nisu obavezne</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="mi">3</span><span class="o">.</span><span class="mi">14159</span><span class="o">.</span><span class="n">round</span> <span class="mi">2</span>   <span class="c1">#=&gt; 3.14</span>
+</span><span class='line'><span class="mi">3</span><span class="o">.</span><span class="mi">14159</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1">#=&gt; 3.14</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>U prvom primjeru u ovom poglavlju zbrajali smo brojeve. Koristili smo
+<code>+</code> za to. Tako možemo koristiti i sve algebarske operacije (<code>-, +, *,
+/</code>).</p>
+
+<p><strong>Sve su ove algebarske operacije metode!</strong> - zato što je Ruby jedan od
+najobjektnijih jezika na svijetu</p>
+
+<p>Primjer</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="mi">2</span><span class="o">.</span><span class="n">+</span> <span class="mi">3</span> <span class="c1">#=&gt; 5</span>
+</span><span class='line'><span class="mi">2</span><span class="o">.</span><span class="n">+</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c1">#=&gt; 5</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Zašto nismo koristili točku za poziv metode + kada smo zbrajali?</em></p>
+
+<p><code>2 + 3</code> je <strong>sintaktički šećer</strong> ili kratica za pisanje <code>1.+ 3</code> koja je
+napravljena da bi nam olakšala život.</p>
+
+<p><strong>Drill</strong></p>
+
+<div><script src='https://gist.github.com/1877085.js?file='></script>
+<noscript><pre><code>### Brojčano na ekranu ispišite koliko godina ima sekundi.
+
+### Koliko imate godina ako ste start 8286 dana?</code></pre></noscript></div>
+
+
+<h2>Stringovi</h2>
+
+<p><em>String</em> je sve što se nalazi unutar navodnika.</p>
+
+<p>Primjeri</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="s2">&quot;ruby&quot;</span>
+</span><span class='line'><span class="s1">&#39;ruby&#39;</span>
+</span><span class='line'><span class="s1">&#39;&#39;</span>
+</span><span class='line'><span class="s2">&quot;&quot;</span>
+</span><span class='line'><span class="s2">&quot;1&quot;</span>
+</span><span class='line'><span class="s1">&#39;48304823048304802384&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Kakve nam koristi od stringova?</em></p>
+
+<p>String je tip podatka koji se najčešće koristi. Koristi se za spremanje
+podataka o korisniku - korisničkog imena, emaila, lozinke&#8230;</p>
+
+<p>Neke od string metoda</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="s2">&quot;ruby&quot;</span><span class="o">.</span><span class="n">capitalize</span> <span class="c1">#=&gt; &quot;Ruby&quot;</span>
+</span><span class='line'><span class="s2">&quot;mOzIlLa&quot;</span><span class="o">.</span><span class="n">swapcase</span> <span class="c1">#=&gt; &quot;MoZiLlA&quot;</span>
+</span><span class='line'><span class="s2">&quot;github&quot;</span><span class="o">.</span><span class="n">upcase</span> <span class="c1">#=&gt; &quot;GITHUB&quot;</span>
+</span><span class='line'><span class="s2">&quot;NE DERI SE!&quot;</span><span class="o">.</span><span class="n">downcase</span> <span class="c1">#=&gt; &quot;ne deri se!&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&quot;mačka&quot;</span><span class="o">.</span><span class="n">reverse</span> <span class="c1">#=&gt; &quot;akčam&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&quot;mačka &quot;</span> <span class="o">+</span> <span class="s2">&quot;i&quot;</span> <span class="o">+</span> <span class="s2">&quot; pas&quot;</span> <span class="c1">#=&gt; &quot;mačka i pas&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&quot;mačka&quot;</span><span class="o">.</span><span class="n">length</span> <span class="c1">#=&gt; 5</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&quot;Florijan&quot;</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="c1">#=&gt; &quot;o&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Stringovi i brojevi dijele metodu <code>+</code>, ali ne smijemo koristiti druge
+brojevne metode na stringovima. (nemaju smisla)</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="s2">&quot;tata&quot;</span><span class="o">.</span><span class="n">abs</span> <span class="c1">#=&gt; NoMethodError: undefined method `abs&#39; for &quot;tata&quot;:String</span>
+</span><span class='line'>
+</span><span class='line'><span class="mi">2</span><span class="o">.</span><span class="n">capitalize</span> <span class="c1">#=&gt; NoMethodError: undefined method `capitalize&#39; for 2:Fixnum</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&quot;0&quot;</span><span class="o">.</span><span class="n">zero?</span> <span class="c1">#=&gt; NoMethodError: undefined method `zero?&#39; for &quot;0&quot;:String</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Zadnji primjer ima smisla, ali i dalje ne smijemo koristiti brojevne
+metode na stringu. Zato koristimo <strong>konverziju</strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="s2">&quot;0&quot;</span><span class="o">.</span><span class="n">to_i</span><span class="o">.</span><span class="n">zero?</span> <span class="c1">#=&gt; true</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Ovime smo pretvorili string &#8220;0&#8221; u broj i onda ispitali je li jednak
+nuli.</p>
+
+<p>Koristili smo i <strong>ulančavanje</strong>, to jest ljepljenje metoda jednu na
+drugu. Ulančavanje smijemo koristiti bez ograničenja.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="s2">&quot;github&quot;</span><span class="o">.</span><span class="n">reverse</span><span class="o">.</span><span class="n">capitalize</span> <span class="c1">#=&gt; &quot;Buhtig&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Drill</strong></p>
+
+<div><script src='https://gist.github.com/1877184.js?file='></script>
+<noscript><pre><code>### Ispišite svoje ime i prezime unatrag
+
+### Ispišite treće slovo svog imena velikim slovom</code></pre></noscript></div>
+
+
+<h2>Nizovi</h2>
+
+<p>Nizove prepoznajemo po uglatim zagradama.</p>
+
+<p>Primjeri nizova</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="o">]</span>
+</span><span class='line'><span class="o">[</span><span class="mi">414</span><span class="p">,</span><span class="s2">&quot;zebra&quot;</span><span class="p">,</span><span class="mi">2</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Nizovi posjeduju nekoliko korisnih metoda</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="o">].</span><span class="n">length</span> <span class="c1">#=&gt; 4</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="o">].</span><span class="n">shuffle</span> <span class="c1">#=&gt; [4,3,1,2]</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="o">].</span><span class="n">join</span> <span class="s1">&#39; &#39;</span> <span class="c1">#=&gt; &quot;1 2 3 4&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="o">].</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">element</span><span class="o">|</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="n">element</span>
+</span><span class='line'><span class="k">end</span> <span class="c1">#=&gt; [1,2,3,4]</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="o">].</span><span class="n">each</span> <span class="p">{</span><span class="o">|</span><span class="n">x</span><span class="o">|</span> <span class="nb">puts</span> <span class="n">x</span><span class="p">}</span> <span class="c1">#=&gt; [1,2,3,4]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Zanimljivo je konvertirati drugi tip podatka u niz kako bi dobili metode
+niza.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="s2">&quot;Ruby je super&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sr">/ /</span><span class="p">)</span> <span class="c1">#=&gt; [&quot;Ruby&quot;,&quot;je&quot;,&quot;super&quot;]</span>
+</span><span class='line'><span class="s2">&quot;Ruby je super&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sr">//</span><span class="p">)</span> <span class="c1">#=&gt; [&quot;R&quot;,&quot;u&quot;,&quot;b&quot;,&quot;y&quot;,&quot;j&quot;,&quot;e&quot;,&quot;s&quot;,&quot;u&quot;,&quot;p&quot;,&quot;e&quot;,&quot;r&quot;]</span>
+</span><span class='line'><span class="s2">&quot;Ruby je super&quot;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sr">/ /</span><span class="p">)</span><span class="o">.</span><span class="n">shuffle</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="c1">#=&gt; &quot;je super Ruby&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Let&#8217;s drill it baby</strong></p>
+
+<div><script src='https://gist.github.com/1893905.js?file='></script>
+<noscript><pre><code>### Napišite program koji će ispisivati string od 10 slova i 5 znamenki i to svaki put u drukčijem rasporedu
+
+### Napišite program koji će ispisati brojeve od 1 do 10, svaki u svom redu</code></pre></noscript></div>
+
+
+<h2>Intervali</h2>
+
+<p>Interval (range) prepoznajemo po oblim zagradama:</p>
+
+<p>Primjeri</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">10</span><span class="p">)</span>
+</span><span class='line'><span class="p">(</span><span class="mi">0</span><span class="o">.</span><span class="n">.</span><span class="mi">1</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Korisnost: ne trebamo upisivati sve vrijednosti u niz nego koristimo
+interval</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">x</span><span class="o">|</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="n">x</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Drill</strong></p>
+
+<div><script src='https://gist.github.com/1893927.js?file='></script>
+<noscript><pre><code>### Ispišite sve brojeve od 1 do 100, svaki u svom redu
+
+### Ispišite brojeve od 17 do 32 u jednom redu, odvojite ih zarezom</code></pre></noscript></div>
+
+
+<h2>Rječnici</h2>
+
+<p>Rječnik (hash) prepoznajemo po vitičastim zagradama. Rječnik je sličan
+nizu, samo što svakoj vrijednosti dodjeljuje ključ.</p>
+
+<p>Struktura rječnika:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">{</span> <span class="ss">:key</span> <span class="o">=&gt;</span> <span class="ss">:value</span> <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Primjeri</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">karakteristike</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:linux</span> <span class="o">=&gt;</span> <span class="s2">&quot;zgodan&quot;</span><span class="p">,</span> <span class="ss">:windows</span> <span class="o">=&gt;</span> <span class="s2">&quot;nezgodan&quot;</span><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">karakteristike</span><span class="o">[</span><span class="ss">:linux</span><span class="o">]</span> <span class="c1">#=&gt; &quot;zgodan&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">karakteristike</span><span class="o">[</span><span class="ss">:windows</span><span class="o">]</span> <span class="c1">#=&gt; &quot;nezgodan&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">karakteristike</span><span class="o">.</span><span class="n">keys</span> <span class="c1">#=&gt; [:linux,:windows]</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">karakteristike</span><span class="o">.</span><span class="n">values</span> <span class="c1">#=&gt; [&quot;zgodan&quot;,&quot;nezgodan&quot;]</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">karakteristike</span><span class="o">[</span><span class="ss">:linux</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;simpatičan&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">karakteristike</span> <span class="c1">#=&gt; {:linux =&gt; &quot;simpatičan&quot;, :windows =&gt; &quot;nezgodan&quot;}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Ovdje je <code>karakteristike</code> varijabla, a varijable služe za spremanje
+podataka za kasniju upotrebu.</p>
+
+<p>Glavna karakteristika rječnika je da ključ jednoznačno određuje
+vrijednost.</p>
+
+<p>U rječnicima se kao ključevi najčešće koriste <strong>simboli</strong>.</p>
+
+<p>Još primjera</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">karakteristike</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:linux</span> <span class="o">=&gt;</span> <span class="s2">&quot;zgodan&quot;</span><span class="p">,</span> <span class="ss">:windows</span> <span class="o">=&gt;</span> <span class="s2">&quot;nezgodan&quot;</span><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">karakteristike</span><span class="o">.</span><span class="n">to_a</span> <span class="c1">#=&gt; [[:linux, &quot;zgodan&quot;], [:windows, &quot;nezgodan&quot;]]</span>
+</span><span class='line'><span class="n">karakteristike</span><span class="o">.</span><span class="n">to_a</span><span class="o">.</span><span class="n">flatten</span> <span class="c1">#=&gt; [:linux, &quot;zgodan&quot;, :windows, &quot;nezgodan&quot;]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Uvjeti</h2>
+
+<p>Uvjete u rubyu ostvarujemo ključnom riječju <code>if</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">if</span> <span class="o">&lt;</span><span class="n">something</span><span class="o">&gt;</span> <span class="k">do</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Primjeri</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">if</span> <span class="kp">true</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;bingo!&quot;</span>
+</span><span class='line'><span class="k">end</span> <span class="c1">#=&gt; ispisuje &quot;bingo!&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="kp">false</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;bingo!&quot;</span>
+</span><span class='line'><span class="k">end</span> <span class="c1">#=&gt; ne ispisuje ništa</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="mi">3</span> <span class="o">&gt;</span> <span class="mi">2</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;3 je veći od 2&quot;</span>
+</span><span class='line'><span class="k">end</span> <span class="c1">#=&gt;  ispisuje &quot;3 je veći od 2&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="mi">2</span> <span class="o">&gt;</span> <span class="mi">3</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;2 je veći od 3&quot;</span>
+</span><span class='line'><span class="k">end</span> <span class="c1">#=&gt; ne ispisuje ništa</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="mi">2</span> <span class="o">&gt;</span> <span class="mi">3</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;2 je veći od 3&quot;</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;2 nije je veći od 3&quot;</span>
+</span><span class='line'><span class="k">end</span> <span class="c1">#=&gt; ispisuje &quot;2 nije veći od 3&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="mi">2</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;nema ostatka sa dijeljenjem&quot;</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;ima ostatka sa dijeljenjem&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Negacija</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">if</span> <span class="o">!</span><span class="kp">false</span> <span class="k">do</span>
+</span><span class='line'> <span class="nb">puts</span> <span class="s2">&quot;it&#39;s true!&quot;</span>
+</span><span class='line'><span class="k">end</span> <span class="c1">#=&gt; ispisuje &quot;it&#39;s true!&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">unless</span> <span class="kp">false</span> <span class="k">do</span>
+</span><span class='line'> <span class="nb">puts</span> <span class="s2">&quot;it&#39;s true!&quot;</span>
+</span><span class='line'><span class="k">end</span> <span class="c1">#=&gt; ispisuje &quot;it&#39;s true!&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Perlovski način</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">puts</span> <span class="s2">&quot;it&#39;s true&quot;</span> <span class="k">if</span> <span class="kp">false</span> <span class="c1">#=&gt; ne ispisuje ništa</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">puts</span> <span class="s2">&quot;it&#39;s true&quot;</span> <span class="k">if</span> <span class="kp">true</span> <span class="c1">#=&gt; ispisuje &quot;it&#39;s true&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Let&#8217;s drill this shit</strong></p>
+
+<div><script src='https://gist.github.com/1894357.js?file='></script>
+<noscript><pre><code>### a) Ispišite sve brojeve od 1 do 1000 koji su djeljivi sa 13 ili 7
+
+### b) Napravite novi rječnik koji će sadržavati dva ključa.
+###    Ključevi: 15, 7
+###          
+###    Pod ključem &quot;15&quot; u ovom hashu moraju biti svi brojevi
+###    od 1 do 1000 djeljivi sa 15
+###    Pod ključem &quot;7&quot; u ovom hashu moraju biti svi brojevi
+###    od 1 do 1000 djeljivi sa 7
+
+### c) Ispišite koliko postoji vrijendosti za svaki ključ iz prethodnog zadatka
+</code></pre></noscript></div>
+
+
+<h2>Konstante</h2>
+
+<p>Ništa pametno - slične varijablama ali spremaju jednu vrijednost koja se
+ne bi trebala mijenjati.</p>
+
+<p>Primjeri</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Boje</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;plava&quot;</span><span class="p">,</span><span class="s2">&quot;crvena&quot;</span><span class="p">,</span><span class="s2">&quot;zelena&quot;</span><span class="p">,</span><span class="s2">&quot;žuta&quot;</span><span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="no">Spol</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;muško&quot;</span><span class="p">,</span><span class="s2">&quot;žensko&quot;</span><span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="no">INSTRUMENTI</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;gitara&quot;</span><span class="p">,</span><span class="s2">&quot;bubnjevi&quot;</span><span class="p">,</span><span class="s2">&quot;bas gitara&quot;</span><span class="o">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="no">IME_PSA</span> <span class="o">=</span> <span class="s2">&quot;Lola&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Upotreba</p>
+
+<p>Ako se podatak kojim slučajem i promjeni znamo da će se promjeniti i na
+svim ostalim mjestima, ne moramo tražiti gdje se sve koristi.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/02/20/ah-taj-divan-objektni-svijet/">ah taj divan objektni svijet</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-20T13:57:00+01:00" pubdate data-updated="true">Feb 20<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>Metode</h2>
+
+<p>Metoda je definicija više naredbi koje se obavljaju jedna iza druge.</p>
+
+<p>Metodu prepoznajemo po ključnoj riječi <code>def</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">ispisi_parne</span>
+</span><span class='line'>  <span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+</span><span class='line'>      <span class="nb">puts</span> <span class="n">i</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">ispisi_parne</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Argumente koje šaljemo metodi moramo definirati unutar zagrada.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">ispisi_parne</span><span class="p">(</span><span class="n">limit</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.limit</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+</span><span class='line'>      <span class="nb">puts</span> <span class="n">i</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">ispisi_parne</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">ispisi_parne</span> <span class="mi">40</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">ispisi_parne</span> <span class="c1">#=&gt; ArgumentError</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Pretpostavljene vrijednosti argumenata</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">ispisi_parne</span><span class="p">(</span><span class="n">limit</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.limit</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+</span><span class='line'>      <span class="nb">puts</span> <span class="n">i</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">ispisi_parne</span> <span class="mi">20</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">ispisi_parne</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Više argumenata</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">ispisi_parne</span><span class="p">(</span><span class="n">low</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">high</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">(</span><span class="n">low</span><span class="o">.</span><span class="n">.high</span><span class="p">)</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+</span><span class='line'>      <span class="nb">puts</span> <span class="n">i</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">ispisi_parne</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">ispisi_parne</span> <span class="mi">5</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">ispisi_parne</span><span class="p">(</span><span class="kp">nil</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span> <span class="c1">#=&gt; ArgumentError</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>DRILL</strong></p>
+
+<div><script src='https://gist.github.com/1905082.js?file='></script>
+<noscript><pre><code>### Napišite metodu koja prima string i vraća broj pojavljivanja slova a u tom stringu
+
+
+### Napišite metodu koja prima string a ispisuje ga unazad</code></pre></noscript></div>
+
+
+<p>Ruby je objektan jezik. Što to znači?</p>
+
+<p>Pas zna lajat, mačka zna mijaukat.</p>
+
+<p>Nove objekte u Rubyu radimo pomoću <strong>klasa</strong>. Klasa nije ništa drugo
+nego nacrt objekta.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Dog</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">run</span>
+</span><span class='line'>    <span class="s2">&quot;running like a boss...&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">come</span>
+</span><span class='line'>    <span class="s2">&quot;just a second!&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">bark</span>
+</span><span class='line'>    <span class="s2">&quot;woof!&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">pas</span> <span class="o">=</span> <span class="no">Dog</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">pas</span><span class="o">.</span><span class="n">bark</span> <span class="c1">#=&gt; &quot;woof!&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">pas</span><span class="o">.</span><span class="n">run</span> <span class="c1">#=&gt; &quot;running like a boss...&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">pas</span><span class="o">.</span><span class="n">come</span> <span class="c1">#=&gt; &quot;just a second!&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">pas</span><span class="o">.</span><span class="n">class</span> <span class="c1">#=&gt; Dog</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">pag</span><span class="o">.</span><span class="n">is_a?</span> <span class="no">Dog</span> <span class="c1">#=&gt; true</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Zašto koristiti objektno programiranje?</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1">### Lakše je za čitati</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">### Ispitivanje parnosti</span>
+</span><span class='line'>
+</span><span class='line'><span class="mi">17</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="c1">#=&gt; false</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">### ili</span>
+</span><span class='line'>
+</span><span class='line'><span class="mi">17</span><span class="o">.</span><span class="n">even?</span> <span class="c1">#=&gt; false</span>
+</span><span class='line'>
+</span><span class='line'><span class="mi">17</span><span class="o">.</span><span class="n">odd?</span> <span class="c1">#=&gt; true</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Recimo da želimo udvostručiti broj.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">udvostruci</span><span class="p">(</span><span class="n">broj</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">broj</span> <span class="o">*</span> <span class="mi">2</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">udvostruci</span> <span class="mi">4</span> <span class="c1">#=&gt; 8</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">udvostruci</span> <span class="mi">5</span> <span class="c1">#=&gt; 25</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">### Što je ovdje objekt?</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Objektni način</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Numeric</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">udvostruci</span>
+</span><span class='line'>    <span class="nb">self</span> <span class="o">*</span> <span class="mi">2</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="mi">2</span><span class="o">.</span><span class="n">udvostruci</span> <span class="c1">#=&gt; 4</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Klasne i objektne varijable</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Dog</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">name</span><span class="o">=</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+</span><span class='line'>    <span class="vi">@name</span> <span class="o">=</span> <span class="nb">name</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">name</span>
+</span><span class='line'>    <span class="vi">@name</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">dog</span> <span class="o">=</span> <span class="no">Dog</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">dog</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Lola&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">dog</span><span class="o">.</span><span class="n">name</span> <span class="c1">#=&gt; &quot;Lola&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Dog</span>
+</span><span class='line'>  <span class="kp">attr_accessor</span> <span class="ss">:name</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">dog</span> <span class="o">=</span> <span class="no">Dog</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">dog</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Lola&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">dog</span><span class="o">.</span><span class="n">name</span> <span class="c1">#=&gt; &quot;Lola&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong> HARDCORE DRILL (PRIJEMNI) </strong></p>
+
+<div><script src='https://gist.github.com/1905292.js?file='></script>
+<noscript><pre><code>### 1. Create user class by implementing
+### a. properties
+### i. user_id
+### ii. username
+### iii. password
+### iv. email
+### b. methods
+### i. greet (learn user to say &quot;Hi! My name is &lt;name&gt;, nice to meet you.&quot;
+###
+
+### 2. Create recursive function that returns result for x^y
+
+### 3. Write a program that prints the numbers from 1 to 100. But for multiples of three
+### print “Fizz” instead of the number and for the multiples of five print “Buzz”. For
+### numbers which are multiples of both three and five print “FizzBuzz”.
+
+### 4. Find the largest integer value in array (all values in array are integers)
+</code></pre></noscript></div>
+
+
+<p><a href="http://code.google.com/codejam/contest/dashboard?c=351101#s=p1">MOAR?</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
     <a href="/blog/archives">Blog Archives</a>
@@ -319,6 +1284,14 @@ vraća</p>
     
       <li class="post">
         <a href="/blog/2012/02/20/zahtjevi-za-rad/">zahtjevi za rad</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/02/20/osnovni-tipovi-podataka/">osnovni tipovi podataka</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/02/20/ah-taj-divan-objektni-svijet/">ah taj divan objektni svijet</a>
       </li>
     
   </ul>
