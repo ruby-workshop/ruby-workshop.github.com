@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | Ruby Workshop]]></title>
   <link href="http://ruby-workshop.github.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://ruby-workshop.github.com/"/>
-  <updated>2012-02-25T12:22:47+01:00</updated>
+  <updated>2012-02-25T14:25:00+01:00</updated>
   <id>http://ruby-workshop.github.com/</id>
   <author>
     <name><![CDATA[Hrvoje Šimić]]></name>
@@ -526,11 +526,11 @@ end
 
 <p>```ruby</p>
 
-<p>if !false do
+<p>if !false
  puts "it's true!"
 end #=> ispisuje "it's true!"</p>
 
-<p>unless false do
+<p>unless false
  puts "it's true!"
 end #=> ispisuje "it's true!"
 ```</p>
