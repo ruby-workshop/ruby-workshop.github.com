@@ -4,7 +4,7 @@
   <title><![CDATA[Ruby Workshop]]></title>
   <link href="http://ruby-workshop.github.com/atom.xml" rel="self"/>
   <link href="http://ruby-workshop.github.com/"/>
-  <updated>2012-02-25T03:14:46+01:00</updated>
+  <updated>2012-02-25T12:22:47+01:00</updated>
   <id>http://ruby-workshop.github.com/</id>
   <author>
     <name><![CDATA[Hrvoje Šimić]]></name>
@@ -305,10 +305,10 @@ broj zna izvoditi zove se <strong>metoda</strong>.</p>
 </span><span class='line'><span class="c1">### n   argument koji šaljemo metodi, nije obavezan. ako ne pošaljemo </span>
 </span><span class='line'><span class="c1">###     argument podrazumijeva se 0</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">-</span><span class="mi">2</span><span class="o">.</span><span class="n">round</span> <span class="o">=&gt;</span> <span class="o">-</span><span class="mi">2</span>
-</span><span class='line'><span class="mi">3</span><span class="o">.</span><span class="mi">14</span><span class="o">.</span><span class="n">round</span> <span class="o">=&gt;</span> <span class="mi">3</span>
-</span><span class='line'><span class="mi">3</span><span class="o">.</span><span class="mi">14159</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="mi">3</span><span class="o">.</span><span class="mi">14</span>
-</span><span class='line'><span class="mi">3</span><span class="o">.</span><span class="mo">021</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="mi">3</span><span class="o">.</span><span class="mo">021</span>
+</span><span class='line'><span class="o">-</span><span class="mi">2</span><span class="o">.</span><span class="n">round</span> <span class="c1">#=&gt; -2</span>
+</span><span class='line'><span class="mi">3</span><span class="o">.</span><span class="mi">14</span><span class="o">.</span><span class="n">round</span> <span class="c1">#=&gt; 3</span>
+</span><span class='line'><span class="mi">3</span><span class="o">.</span><span class="mi">14159</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#=&gt; 3.14</span>
+</span><span class='line'><span class="mi">3</span><span class="o">.</span><span class="mo">021</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="c1">#=&gt; 3.021</span>
 </span></code></pre></td></tr></table></div></figure>
 
 

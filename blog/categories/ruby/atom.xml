@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | Ruby Workshop]]></title>
   <link href="http://ruby-workshop.github.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://ruby-workshop.github.com/"/>
-  <updated>2012-02-25T03:14:46+01:00</updated>
+  <updated>2012-02-25T12:22:47+01:00</updated>
   <id>http://ruby-workshop.github.com/</id>
   <author>
     <name><![CDATA[Hrvoje Šimić]]></name>
@@ -231,10 +231,10 @@ broj zna izvoditi zove se <strong>metoda</strong>.</p>
 
 <h3>argument podrazumijeva se 0</h3>
 
-<p>-2.round => -2
-3.14.round => 3
-3.14159.round(2) => 3.14
-3.021.round(4) => 3.021
+<p>-2.round #=> -2
+3.14.round #=> 3
+3.14159.round(2) #=> 3.14
+3.021.round(4) #=> 3.021
 ```</p>
 
 <p><em>Kako prepoznati metodu?</em></p>
